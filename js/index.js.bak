@@ -240,13 +240,13 @@ function pageMove(tw){
 			inClass = 'pt-page-moveFromRight';
 			break;
 	}
-	isAnimating = true;
+	//isAnimating = true;
 	$(nowPage).removeClass("hide");
 	
 	$(lastPage).addClass(outClass);
 	$(nowPage).addClass(inClass);
 	
-	setTimeout(function(){
+	//setTimeout(function(){
 		$(lastPage).removeClass('page-current');
 		$(lastPage).removeClass(outClass);
 		$(lastPage).addClass("hide");
@@ -263,7 +263,7 @@ function pageMove(tw){
 		$(nowPage).find("a").removeClass("hide");
 		
 		isAnimating = false;
-	},600);
+	//},200);
 }
 
 })();
